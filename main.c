@@ -7,14 +7,14 @@
 
 #define SLEEP_TIME_MS 300
 #define sizeofa(array) sizeof array / sizeof array[0]
-#define POINT "\e[42m * \e[0;32m"
+#define POINT "\e[42;30m * \e[0;32m"
 
 int msleep(unsigned int tms) {
     return usleep(tms * 1000);
 }
 
 int main() {
-    printf(GRNB " zeriax@puter " COLOR_RESET "\n");
+    printf("\e[42;30m zeriax@puter " COLOR_RESET "\n");
     msleep(SLEEP_TIME_MS);
 
     char* greentexts[] = {
@@ -29,7 +29,7 @@ int main() {
         msleep(SLEEP_TIME_MS);
     }
 
-    printf(GRNB " let's connect " COLOR_RESET "\n");
+    printf("\e[42;30m let's connect " COLOR_RESET "\n");
     msleep(SLEEP_TIME_MS);
 
     char* socials[] = {
@@ -45,7 +45,7 @@ int main() {
         msleep(SLEEP_TIME_MS);
     }
 
-    printf(GRNB " yes, that's me " COLOR_RESET "\n");
+    printf("\e[0;42;30m yes, that's me " COLOR_RESET "\n");
 
     return 0;
 }

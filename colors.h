@@ -70,3 +70,4 @@
 
 // Reset
 #define COLOR_RESET "\e[0m"
+#define TRANSPARENT "\e[1m"
